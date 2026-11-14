@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #92ade2;
+    color: #1f2937;
+}
+
+a {
+    text-decoration: none;
+}
+
+.barra-superior {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.barra-superior .marca {
+    color: #043646;
+    font-weight: 700;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.barra-superior a {
+    color: #2528ee;
+    font-size: 20px;
+    padding: 8px 10px;
+  
+    transition: all 0.2s ease;
+}
+
+.contenedor {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.contenedor-formulario {
+    max-width: 620px;
+    margin: 30px auto;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+ 
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.cabecera-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.cabecera-titulo h2,
+.contenedor-formulario h3 {
+    margin: 0;
+    color: #111827;
+    font-weight: 700;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+  
+    padding: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.02);
+}
+
+.filtros input,
+.filtros select,
+.grupo-campo input,
+.grupo-campo select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #111827;
+    font-size: 14px;
+}
+
+.filtros input:focus,
+.filtros select:focus,
+.grupo-campo input:focus,
+.grupo-campo select:focus {
+    border-color: #9ca3af;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.18);
+}
+
+.filtros input {
+    flex: 1;
+}
+
+.filtros select {
+    min-width: 170px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.tabla th {
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 10px;
+}
+
+.tabla td {
+    padding: 12px 10px;
+    border-top: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #374151;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.badge-disponible {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge-mantenimiento {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    filter: brightness(0.97);
+}
+
+.btn-oscuro {
+    background: #111827;
+    color: #ffffff;
+}
+
+.btn-gris {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.btn-borde {
+    background: #ffffff;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.btn-pequeno {
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.grupo-campo {
+    margin-bottom: 16px;
+}
+
+.grupo-campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.texto-ayuda {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #6b7280;
+}
+
+.fila-tres {
+    display: flex;
+    gap: 12px;
+}
+
+.fila-tres .grupo-campo {
+    flex: 1;
+}
+
+.alerta-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.alerta-exito {
+    background: #ecfdf5;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .barra-superior {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+    }
+
+    .cabecera-titulo,
+    .filtros,
+    .fila-tres {
+        flex-direction: column;
+    }
+
+    .filtros {
+        align-items: stretch;
+    }
+
+    .contenedor-formulario {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+    .tabla {
+        display: block;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfaf6;
+    color: #333;
+}
+
+.encabezado {
+    background-color: #928403;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+.banner {
+    background-color: #046077fa;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #d4d10b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.seccion-productos {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.seccion-productos h2 {
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #e0d5c8;
+    border-radius: 6px;
+    padding: 20px;
+    width: 260px;
+}
+
+.tarjeta h3 {
+    color: #8c5327;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #5c3a21;
+}
+
+.seccion-contacto {
+    background-color: #fdfcfb;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-contacto h2 {
+    color: #080808;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.pie {
+    background-color: #5c3a21;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Don Pan</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="logo">Panadería Don Pan</div>
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Pedidos</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="banner">
+        <h1>Pan que está recién horneado todos los días</h1>
+        <p>Tradición que es artesanal en San Diego,Zacapa con los mejores ingredientes frescos.</p>
+        <a href="#contacto" class="boton">Hacer un pedido</a>
+    </section>
+
+    <section id="productos" class="seccion-productos">
+        <h2>Nuestras especialidades</h2>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <h3>Pan dulce tradicional</h3>
+                <p>Pan concha, champurradas, quesadillas de arroz y cubiletes recién salidos del horno.</p>
+                <span class="precio">Desde Q4.50</span>
+            </div>
+            <div class="tarjeta">
+                <h3>Pan Francés</h3>
+                <p>Crujiente por fuera y suave por dentro, ideal para el desayuno o cena.</p>
+                <span class="precio">Fila Q7.00</span>
+            </div>
+            <div class="tarjeta">
+                <h3>Pasteles para tus eventos especiales</h3>
+                <p>Pasteles personalizados de tres leches, chocolate y frutas de la temporada.</p>
+                <span class="precio">Desde Q 125.00</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccion-contacto">
+        <h2>Solicita tu pedido aqui</h2>
+        <form class="formulario">
+            <label>Nombre del cliente completo:</label>
+            <input type="text" placeholder="Tu nombre" required>
+
+            <label>Teléfono del cliente:</label>
+            <input type="text" placeholder="ejemplo:50383559" required>
+
+            <label>Detalle del pedido:</label>
+            <textarea rows="3" placeholder="indica los producto que vas a encargar"></textarea>
+
+            <button type="submit" class="boton" onclick="alert('Pedido realizado con éxito')">Enviar Encargo</button>
+        </form>
+    </section>
+
+    <footer class="pie">
+        <p>Panadería Don Pan Zacapa, ExamFinalDesWeb</p>
+    </footer>
+
+</body>
+
+</html>
